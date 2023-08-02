@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Display</title>
+   <style>
+      .dflex{
+         display: flex; /* içerdeki ilk sıra elementlerini yanyana getirir */
+      }
+      .dblock{
+         display: flex;
+         display: block; /* tüm satırı kaplar */
+      }
+      .dinline{
+         display: inline-flex; /* ana kapsayıcıyı inline içerdekileri flex olarak getirir */
+         display: inline-block; /* ana kapsayıcı inline içerdekileri block yapar */
+      }
+      .box2{
+         width: 200px;
+         height: 200px;
+         border: 2px solid black;
+         margin: 10px;
+      }
+      .bx{
+         width: 50px;
+         height: 50px;
+         background: red;
+         border: 2px solid black;
+      }
+      .boo{
+         width: 100px;
+         height: 200px;
+         background: red;
+         border: 2px solid black;
+      }
+      .bee{
+         width: 200px;
+         height: 100px;
+         background: blue;
+         border: 2px solid black;
+      }
+      .baa{
+         width: 100px;
+         height: 100px;
+         background: orange;
+         border: 2px solid black;
+      }
+      .dv1{
+         width: 500px;
+         height: 500px;
+         border: 10px solid black;
+         background: rgb(122, 222, 122);
+         display: flex;
+         justify-content: end;
+         align-items: end;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="dv1">
+      <div class="bx"></div>
+   </div>
+   
+   
+   <div class="div3">
+      <div class="dflex">
+         <div class="boo"></div>
+         <div>
+            <div class="baa"></div>
+            <div class="boo"></div>
+         </div>
+      </div>
+      <div class="dflex">
+         <div class="baa"></div>
+         <div class="bee"></div>
+      </div>
+   </div>
+   
+   <div class="box-main">
+      <div class="dflex">
+         <div class="box2 dflex">
+            <div class="bx"></div>
+            <div class="bx"></div>
+         </div>
+         <div class="box2">
+            <div class="bx"></div>
+            <div class="dflex">
+               <div class="bx"></div>
+               <div class="bx"></div>
+            </div>
+         </div>
+      </div>
+      <div class="dflex" style="width: 450px; justify-content: end;">
+         <div class="box2 dflex">
+            <div>
+               <div class="bx"></div>
+               <div class="bx"></div>
+            </div>
+            <div class="bx"></div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="dinline">
+      <div>Lorem ipsum dolor sit amet asdasdasd.</div>
+      <div>Lorem ipsum dolor sit amet.</div>
+   </div>
+   <span>hagsdfhasfd</span>
+   <div class="div1">
+      <div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+      </div>
+      <div>
+         <div class="box1"></div>
+         <div class="box1"></div>
+      </div>
+      <div class="box1"></div>
+   </div>
+   
+   <div class="dflex">
+      <div>
+         <h3>Başlık</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facere corrupti incidunt commodi. Obcaecati enim quibusdam magnam dolores aperiam temporibus!</p>
+      </div>
+      <div style="min-width: 100px; width: 100px; height: 100px; border: 2px solid black;">
+         <p>asdasd</p>
+         <p>asdasd</p>
+         <p>asdasd</p>
+      </div>
+      <div>
+         <p>Lorem ipsum dolor sit amet.</p>
+         <h4>Tarih</h4>
+      </div>
+   </div>
+   
+</body>
+</html>

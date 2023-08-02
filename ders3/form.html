@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMLAR</title>
+</head>
+<body>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96386.77602795881!2d28.730691443359376!3d40.979581199999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd361d9f2bcd%3A0x109cda61c48e4b76!2sNeos%20Yaz%C4%B1l%C4%B1m%20Akademi!5e0!3m2!1str!2str!4v1685735271410!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe width="1000px" height="300" src="https://www.youtube.com/embed/GHDjBoKUU38" title="SATRANÇTA EN TEMEL AÇILIŞ TUZAKLARI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<form>
+		<label>İsim:</label><br>
+		<input required type="text" placeholder="Adnızı Giriniz" name=""><br>
+		<label>Soyisim:</label><br>
+		<input required type="text" placeholder="Soyadınızı Giriniz" name=""><br>
+		<label for="phone">Tel:</label><br>
+		<input required type="tel" placeholder="+90 555 55 55" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+		<label>Email:</label><br>
+		<input required type="email" placeholder="example@gmail.com" name=""><br>
+		<label>Kullanıcı Adı:</label><br>
+		<input required type="text" name=""><br>
+		<label>Şifre:</label><br>
+		<input required type="password" name=""><br>
+		<label>Tekrar Şifre:</label><br>
+		<input required type="password" name=""><br>
+		<label>Ülke Seçiniz:</label><br>
+		<select>
+			<option>Türkiye</option>
+			<option selected>Almanya</option>
+			<option>Amerika</option>
+			<option>İngiltere</option>
+		</select><br><br>
+		<fieldset>
+			<legend>Bildiğiniz Diller</legend>
+			<input id="html" checked type="checkbox" name="programDili">
+			<label for="html">Html</label>
+			<input id="a" type="checkbox" name="programDili">
+			<label for="a">Css</label>
+			<input type="checkbox" name="programDili">
+			<label>Javascript</label>
+			<input type="checkbox" name="programDili">
+			<label>Bootstrap</label>
+		</fieldset>
+		<label>Cinsiyet:</label><br>
+		<input id="erkek" type="radio" name="cinsiyet">
+		<label for="erkek">Erkek</label>
+		<input id="kadın" type="radio" name="cinsiyet">
+		<label for="kadın">Kadın</label><br><br>
+		<button type="submit">Formu Gönder</button>
+		<input type="reset" name="">
+	</form>
+	<hr>
+	<form>
+		<input id="erkek" type="radio" name="cinsiyet">
+		<label for="erkek">Erkek</label>
+		<input id="kadın" type="radio" name="cinsiyet">
+		<label for="kadın">Kadın</label>
+		<input id="belirsiz" type="radio" name="cinsiyet">
+		<label for="belirsiz">Belirtmek istemiyorum</label>
+	</form>
+	<hr>
+	<form>
+		<fieldset>
+			<legend>Bildiğiniz Diller</legend>
+			<input id="html" checked type="checkbox" name="programDili">
+			<label for="html">Html</label>
+			<input id="a" type="checkbox" name="programDili">
+			<label for="a">Css</label>
+			<input type="checkbox" name="programDili">
+			<label>Javascript</label>
+			<input type="checkbox" name="programDili">
+			<label>Bootstrap</label>
+		</fieldset>
+		
+	</form>
+	<hr>
+	<form>
+		text:<input type="text" name=""><br><br>
+		<textarea rows="10" style="width: 500px;"></textarea><br><br>
+		password:<input type="password" name=""><br><br>
+		email:<input type="email" name="">
+		number:<input type="number" name=""><br><br>
+		file:<input type="file" name=""><br><br>
+		search:<input type="search" name=""><br><br>
+		date:<input type="date" name=""><br><br>
+		time:<input type="time" name=""><br><br>
+		range:<input type="range" name=""><br><br>
+		color:<input type="color" name=""><br><br>
+		reset:<input type="reset" name=""><br><br>
+		button - input: <input type="button" value="Gönder" name=""><br>
+		button:<button type="button">Gönder</button><br>
+		submit:<button type="submit">Submit</button><br>
+	</form>
+	<hr>
+	<form>
+		<input type="submit" name="login" value="Giriş"><br>
+		<button type="submit" name="submit" value="login">Giriş</button>
+	</form>
+	<!-- <label>asdasd</label>
+	<input type="checkbox" name="">
+	<input type="radio" name=""> -->
+	
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>display flex</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+      .container{
+         padding: 50px;
+      }
+      .border4{
+         border: 4px solid black;
+      }
+      .box1{
+         width: 200px;
+         height: 200px;
+         background: red;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: end;
+      }
+      .box2{
+         width: 300px;
+         height: 400px;
+         background: blueviolet;
+         display: flex;
+         flex-direction: column;
+      }
+      .box3{
+         width: 250px;
+         height: 300px;
+         background: chocolate;
+         display: flex;
+         flex-direction: column; /* yapıyı 90 derece döndürür */
+      }
+      .box3>div:nth-child(1){ /* çocuk seçici */
+         display: flex;
+         justify-content: space-between;
+      }
+      .box3>div:nth-child(2){
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: end;
+      }
+      .bx1{
+         width: 50px;
+         height: 50px;
+         background: cyan;
+         border: 2px solid black;
+      }
+      .divh1{
+         height: 200px;
+         display: flex;
+         justify-content: end;
+      }
+      .divh2{
+         height: 200px;
+         display: flex;
+      }
+      .divh2>div:last-child{
+         width: 100%;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+      }
+      .divh3{
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   </style>
+</head>
+<body>
+   <h1>display: flex</h1>
+
+   <div class="container">
+      <div class="box1 border4">
+         <div class="bx1"></div>
+         <div class="bx1"></div>
+      </div>
+      <div class="box2 border4">
+         <div class="divh1">
+            <div class="bx1"></div>
+         </div>
+         <div class="divh2 ">
+            <div class="">
+               <div class="bx1"></div>
+            </div>
+            <div class="">
+               <div class="bx1"></div>
+            </div>
+         </div>
+         <div class="divh3">
+            <div class="bx1"></div>
+         </div>
+      </div>
+      <div class="box3 border4">
+         <div>
+            <div class="bx1"></div>
+            <div class="bx1"></div>
+         </div>
+         <div class="">
+            <div class="bx1"></div>
+         </div>
+      </div>
+   </div>
+   <div>
+      1) ilk iki kutunun ilk önce bir hidden dive ihtiyacı var 
+      2) ve yanyana gelmesi lazım
+      3) 1'i en sola diğeri en sağa 
+     
+   </div>
+</body>
+</html>

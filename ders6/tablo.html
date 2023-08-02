@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tablolar</title>
+   <style>
+      .table1{
+         width: 400px;
+         height: 200px;
+      }
+      .table2{
+         width: 400px;
+      }
+      /* 
+      iç içe seçici; ilk seçilenin içerisindekini seçmek istiyorsak  
+      araya boşluk bırakılır eğerki seçiceğimiz class ise . ile etiketse 
+      hiç bişey yazmadan seçebiliyoruz.
+      */
+      .table2 tr{ 
+         height: 40px;
+      }
+      .div1 .div2{
+         width: 100px;
+         height: 100px;
+         border: 2px solid black;
+      }
+      .table3 td{
+         width: 50px;
+      }
+      .table3 tr{
+         height: 30px;
+      }
+   </style>
+</head>
+<body>
+   <h1>Tablolar</h1>
+
+   <div class="div1">
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div2"></div>
+   </div>
+   
+   <ul>
+      <li>table: etiketi tablonun ana etiketidir.</li>
+      <li>tr: table etiketi içerisine yazılır ve satır anlamına gelir</li>
+      <li>td: tr etiketleri içerisine yazılır ve sütün anlamını ifade eder</li>
+   </ul>
+
+
+   <table class="table3" border="4px">
+      <tr>
+         <th colspan="5"></th>
+      </tr>
+      <tr>
+         <td></td>
+         <td rowspan="2"></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td rowspan="2"></td>
+         <td></td>
+         <td rowspan="2" colspan="2"></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+        
+      </tr>
+      <tr>
+         <td colspan="2"></td>
+         <td colspan="3"></td>
+        
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td colspan="2"></td>
+         <td></td>
+      </tr>
+   </table>
+   
+   
+   <table class="table2" border="4px">
+      <tr>
+         <th>Sıralama</th>
+         <th>Ülkeler</th>
+         <th>Nüfus</th>
+         <th>Tarih</th>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>Çin</td>
+         <td>1.411.778.724</td>
+         <td>1 Kasım 2020</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>Hindistan</td>
+         <td>1.394.967.309</td>
+         <td>3 Ocak 2022</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>ABD</td>
+         <td>332.864.341</td>
+         <td>12 Aralık 2020</td>
+      </tr>
+   </table>
+   <br><br>
+   <table style="width: 400px; height: 200px;" border="4px">
+      <tr>
+         <td colspan="3">sutun</td>
+         <td>sutun</td>
+         <td>sutun</td>
+      </tr>
+      <tr>
+         <td>sutun</td>
+         <td>sutun</td>
+         <td>sutun</td>
+         <td rowspan="2" colspan="2">sutun</td>
+      </tr>
+      <tr>
+         <td>sutun</td>
+         <td>sutun</td>
+         <td>sutun</td>
+      </tr>
+      <tr>
+         <td colspan="5">sutun</td>
+      </tr>
+   </table>
+   <br><br>
+   <table class="table1" border="4">
+      <tr>
+         <td colspan="2">sutun</td>
+         <td>sutun</td>
+      </tr>
+      <tr>
+         <td rowspan="2">sutun</td>
+         <td>sutun</td>
+         <td>sutun</td>
+      </tr>
+      <tr>
+         <td>sutun</td>
+         <td>sutun</td>
+      </tr>
+   </table>
+   <br><br>
+   <table border="5">
+      <tr>
+         <td>sutun1</td>
+         <td>sutun2</td>
+         <td>sutun3</td>
+      </tr>
+      <tr>
+         <td>satır2 sutun1</td>
+         <td>satır2 sutun2</td>
+         <td>satır2 sutun3</td>
+      </tr>
+   </table>
+   
+</body>
+</html>

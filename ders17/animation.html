@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animasyon</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+
+      .container{
+         display: flex;
+      }
+      .circle{
+         width: 100px;
+         height: 100px;
+         background: chocolate;
+         border-radius: 50%;
+         animation: dongu 5s .5s;
+      }
+      @keyframes dongu {
+         25%{
+            transform: translate(100px);
+            background: green;
+         }
+         50%{
+            transform: translate(100px, 100px);
+            background: purple;
+         }
+         75%{
+            transform: translate(0px, 100px);
+            background: darkred;
+         }
+         100%{
+            transform: translate(0);
+         }
+      }
+
+      .box{
+         width: 100px;
+         height: 100px;
+         background: red;
+         animation: kutu 5s .5s ease-in infinite alternate-reverse;
+         animation: kutu 5s .5s ease-in reverse;
+      }
+      @keyframes kutu {
+         25%{
+            transform: translate(75vw);
+         }
+         50%{
+            transform: translate(30vw,30vh) rotate(4turn);
+         }
+         50%{
+            transform: translate(30vw,30vh) rotate(4turn);
+         }
+         75%{
+            transform: translate(75vw, 75vh) rotate(4turn);
+         }
+         100%{
+            transform: rotate(4turn);
+         }
+         
+      }
+      
+      .box2{
+         margin-top: 20px;
+         width: 100px;
+         height: 100px;
+         background: cornflowerblue;
+         animation: box2 5s .5s both ;
+      }
+      @keyframes box2 {
+         100%{
+            width: 100%;
+            border-right:50px solid black;
+         }
+      }
+   </style>
+</head>
+<body>
+   
+   <h3>Uygulama 1</h3>
+   <h4>kare oluşturun, bg red, sayfanın en sağına sonra ortasına, daha sonrada en uzak köşeye gidicek</p>
+   <h4>sağ köşeye normal gelicek sağ köşeden ortaya gelirken etrafında 4 tur atıcak</h4>
+
+   <div class="container">
+      <div class="circle"></div>
+      <div class="box"></div>
+   </div>
+   <div class="box2"></div>
+   
+   <h2>Ödev</h2>
+   <h3>bir hareketli iconu sayfa üzerinde hareket ettirin(hayvan veya insan olabilir)</h3>
+   <h3>yuvarlak bir daireyi sinus eğrisi gibi gitmesini sağlayın</h3>
+</body>
+</html>

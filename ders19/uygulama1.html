@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Uygulama 1</title>
+   <style>
+      .box-list {
+         display: flex;
+      }
+
+      .box-list>div {
+         display: flex;
+      }
+
+      .box {
+         margin: 10px;
+         width: 300px;
+         height: 200px;
+      }
+
+      @media screen and (max-width:1200px) {
+         .box-list{
+            justify-content: center;
+         }
+         .box-list>div {
+            flex-direction: column;
+         }
+      }
+
+      @media screen and (max-width: 768px) {
+         .box-list{
+            flex-direction: column;
+            align-items: center;
+         }
+      }
+      @media screen and (min-width: 1000px) {
+         /* 1000px'in üstündeyse özellikler geçerli olur */
+      }
+      @media screen and (max-width: 550px) {
+         .box-list>div:first-child .box:nth-child(1){
+            background: purple !important;
+         }
+         .box-list>div:first-child .box:nth-child(2){
+            background: red !important;
+         }
+
+         .box-list>div:last-child .box:nth-child(1){
+            background: blue !important;
+         }
+         .box-list>div:last-child .box:nth-child(2){
+            background: green !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Uygulama1</h1>
+   <!-- 
+         uygulama 1
+         4 tane yanyana gelicek kutu oluşturun
+         width 300px 
+         height 200px
+         renkleri kendiniz verin
+         1200 altına düştüğünde 
+         kutular 2şerli gelsin ve ortalansın
+         768 altına düştüğünde
+         kutular tekli gelsin ve sayfaya ortalansın
+         550 altına düştüğünde bg renleri değişsin
+      -->
+   <div class="box-list">
+      <div>
+         <div class="box" style="background: red;"></div>
+         <div class="box" style="background: blue;"></div>
+      </div>
+      <div>
+         <div class="box" style="background: green;"></div>
+         <div class="box" style="background: purple;"></div>
+      </div>
+   </div>
+
+</body>
+
+</html>

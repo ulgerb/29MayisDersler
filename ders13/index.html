@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+      a{
+         color: #222;
+         text-decoration: none;
+      }
+      
+      .box1{
+         width: 200px;
+         height: 150px;
+         background: darkred;
+         border: 2px solid black;
+         position: static; /* position özlliklerini kabul etmez */
+         right: 100px;
+      }
+      .box2{
+         width: 250px;
+         height: 200px;
+         background: darkgreen;
+         border: 2px solid black;
+         /* sticky: konumlandırma özelliğiyle beraber kullanılmalıdır kendi yerini 
+         korur ama olduğu yerden çıktığımızda bizi takip etmeye devam eder */
+         position: sticky; 
+         position: static; /* default özelliğidir */
+         position: fixed; /* sayfa penceresini takip eder ve ayrılmaz */
+         position: absolute; /* yer işgal etmez kapladığı her hangibir alan yoktur */
+         position: relative; /* kendi yerini korur ve kapsayıcı özelliği alır */
+         
+
+         z-index: 50;
+         /*
+         top: 100px;
+         left: 500px;
+         right: 50px;
+         bottom: 300px;
+         */
+
+
+      }
+      .box3{
+         width: 300px;
+         height: 150px;
+         background: darkblue;
+         border: 2px solid black;
+         position: absolute;
+         bottom: 50px;
+      }
+      .bx1{
+         width: 80px;
+         height: 80px;
+         background: lightblue;
+         position: sticky;
+         top: 50px;
+         left: 50px;
+      }
+      .bx2{
+         width: 60px;
+         height: 60px;
+         background: red;
+         position: sticky;
+         top: 0px;
+      }
+      .bx3{
+         width: 30px;
+         height: 30px;
+         background: darkgoldenrod;
+         position: sticky;
+         left: 30%;
+         top: 20px;
+      }
+      /* z-index */
+      .b1{
+         width: 40px;
+         height: 40px;
+         background: chocolate;
+      }
+      header{
+         background: orange;
+         box-shadow: 0 4px 8px rgba(85, 85, 85, 0.443);
+         position: sticky;
+         top: 0px;
+         z-index: 2000; /* position özelliği zorunludur */
+      }
+      header nav{
+         
+      }
+      header ul{
+         margin: 0 50px;
+         list-style: none;
+         display: flex;
+         justify-content: space-between;
+      }
+      header li{
+         padding: 20px 0;
+      }
+      .social{
+         position: fixed;
+         bottom: 30px;
+         right: 30px;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="social">
+      <a href="#whatsapp" class="wp"><img width="40px" src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt=""></a>
+      <a href="#instagram" class="ins"><img width="40px" src="https://www.svgrepo.com/show/452231/instagram.svg" alt=""></a>
+      <a href="#chat" class="ins"><img width="40px" src="	https://www.svgrepo.com/show/510894/chat-remove.svg" alt=""></a>
+   </div>
+   
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#">ANASAYFA</a></li>
+            <li><a href="#">VİZYONUMUZ</a></li>
+            <li><a href="#">HAKKINDA</a></li>
+            <li><a href="#">İLETİŞİM</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <h3>Lorem ipsum dolor sit amet asdasdasdasdasdasd.</h3>
+   <h3>Lorem ipsum dolor sit amet asdasdasdasdasdasd.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <div class="box1">
+      <div class="bx1">
+         <div class="b1"></div>
+      </div>
+   </div>
+   <div class="box2">
+      <div class="bx2"></div>
+   </div>
+   <div class="box3">
+      <div class="bx3"></div>
+   </div>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <br><br><br>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   <h3>Lorem ipsum dolor sit amet. asdasdasdasdasdasd</h3>
+   
+</body>
+</html>

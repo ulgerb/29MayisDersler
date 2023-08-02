@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>absolute - relative</title>
+   <style>
+      * {
+         box-sizing: border-box;
+         padding: 0;
+      }
+
+      html,
+      body {
+         margin: 0;
+      }
+
+      /* HEADER START */
+      header {
+         width: 100%;
+         height: 70px;
+         background: coral;
+      }
+
+      header nav {
+         padding: 0 10%;
+         height: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      header nav div:first-child {
+         font-size: 30px;
+         font-weight: 800;
+         color: darkslateblue;
+      }
+
+      header nav div:nth-child(2) {
+         color: darkblue;
+      }
+
+      /* HEADER END */
+
+      /* MAIN START */
+      main {}
+
+      .container {
+         height: 400vh;
+         margin: 0 10%;
+         background: #eecdcd;
+      }
+
+      .circle1 {
+         width: 130px;
+         height: 130px;
+         background: crimson;
+         border-radius: 50%;
+         position: absolute;
+         top: 100px;
+         left: -65px;
+      }
+
+      .circle2-relative {
+         position: relative;
+      }
+
+      .circle2-con {
+         width: 65px;
+         height: 130px;
+         position: absolute;
+         overflow: hidden;
+         top: 300px;
+         right: 0;
+      }
+
+      .circle2 {
+         width: 130px;
+         height: 130px;
+         background: crimson;
+         border-radius: 50%;
+      }
+
+      /* MAIN END */
+
+      a:link {
+         color: #FF0000;
+      }
+
+      a:visited {
+         color: #00FF00;
+      }
+
+      a:hover {
+         color: #FF00FF;
+      }
+
+      a:active {
+         color: #0000FF;
+      }
+      p:first-child i:last-child{
+         color: red;
+      }
+      .fl::first-line{
+         color: aquamarine;
+      }
+      .box{
+         margin: auto;
+         width: 200px;
+         height: 200px;
+         background: darkolivegreen;
+         display: flex;
+         position: relative;
+      }
+      .box::after{
+         content: "";
+         width: 50px;
+         height: 50px;
+         background: #993a3a;
+         position: absolute;
+         top: 11px;
+         left: -25px;
+         rotate: 45deg;
+         z-index: 5;
+      }
+      .box::before{
+         content: "";
+         width: 50px;
+         height: 50px;
+         background: #993a3a;
+         position: absolute;
+         rotate: 45deg;
+         top: 11px;
+         left: 175px;
+      }
+      .bx{
+         width: 100%;
+         height: 100%;
+         background: darkolivegreen;
+         position: relative;
+         z-index: 10;
+      }
+   </style>
+</head>
+
+<body>
+
+   <header>
+      <nav>
+         <div>LOGO</div>
+         <div>MENU</div>
+      </nav>
+   </header>
+   <br>
+
+   
+
+   <br>
+   <main>
+      <div class="container">
+
+         <div class="box">
+            <div class="bx"></div>
+         </div>
+         
+         <div class="fl">illo quos obcaecati pariatur molestias, optio nostrum officia hic quibusdam dolorem dolore deleniti laborum itaque et quasi ratione velit harum. Necessitatibus fuga iusto minima, error dolor fugiat adipisci temporibus voluptatem alias consequatur. Asperiores, amet inventore architecto nobis non, beatae quia tempora ab, sunt a laborum? Labore illo voluptas nemo ea aliquam suscipit sed mollitia placeat laudantium reiciendis beatae, fugit odio voluptatem, facere porro!</div>
+         
+         <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+         <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+         
+         <div>
+            <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+            <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+            <div>
+               <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+               <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+               <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+               <p>Lorem, ipsum. <i>Lorem</i>Lorem, ipsum dolor. <i>lorem</i> Lorem, ipsum.</p>
+
+            </div>
+         </div>
+
+         
+         <a href="#12">Link bağlantısı</a>
+
+
+         <div class="circle1"></div>
+         <div class="circle2-relative">
+            <div class="circle2-con">
+               <div class="circle2"></div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+</body>
+
+</html>

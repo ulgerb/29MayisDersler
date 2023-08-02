@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>header</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+   </style>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{margin: 0;}
+      a{
+         text-decoration: none;
+         color: #222;
+      }
+      .mynavbar{
+         height: 80px;
+         padding-left: 50px;
+         display: flex;
+         align-items: center;
+         background: crimson;
+         justify-content: space-between;
+         box-shadow: 0 4px 8px #00000060;
+      }
+      .mynavbar .logo{
+         height: 50px;
+      }
+      .mynavbar .logo img{
+         height: 100%;
+      }
+      .mynavbar .menu{
+         height: 100%;
+         margin: 0;
+         margin-left: 40px;
+         display: flex;
+         list-style-type: none;
+      }
+      .mynavbar .link{
+         height: 100%;
+         padding: 0 20px;
+         display: flex;
+         align-items: center;
+         font-size: 1.3rem;
+      }
+      .mynavbar .link:hover{
+         background: brown;
+      }
+      .mynavbar .link a{
+         color:  lavender;
+         text-shadow: 0px 0px 1px black;
+      }
+      .mynavbar .navigator{
+         width: 150px;
+      }
+      .mynavbar .navigator i:nth-child(1){
+         margin-left: 10px;
+         color: blue;
+         font-size: 1.3rem;
+      }
+      .mynavbar .navigator i:nth-child(2){
+         margin-left: 10px;
+         color: azure;
+         font-size: 1.3rem;
+      }
+   </style>
+</head>
+<body>
+   
+   <header>
+      <nav class="mynavbar">
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+         <ul class="menu">
+            <li class="link"><a href="#">Anasayfa</a></li>
+            <li class="link"><a href="#">Hakkımızda</a></li>
+            <li class="link"><a href="#">İletişim</a></li>
+         </ul>
+         <div class="navigator">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+         </div>
+      </nav>
+   </header>
+   
+
+</body>
+</html>

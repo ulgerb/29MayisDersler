@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>header - footer</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+      body,html{
+      }
+      a{
+         text-decoration: none;
+         color: white;
+      }
+      ul{
+         list-style-type: none;
+      }
+      /* HEADER START */
+      header{}
+      .mynav{
+         background: lightskyblue;
+         display: flex;
+         justify-content: space-between;
+         height: 70px;
+         padding: 0 30px;
+      }
+      .mynav .menu{
+         display: flex;
+         list-style: none;
+      }
+      .mynav .link{
+         padding: 0 20px;
+         display: flex;
+         align-items: center;
+         text-transform: uppercase;
+         font-size: 1.5rem;
+      }
+      .mynav .link:hover{
+         background: #ea88ac;
+      }
+      .mynav .loginmenu{
+         list-style-type: none;
+         display: flex;
+         align-items: center;
+      }
+      .mynav .hline{
+         height: 50%;
+         width: 2px;
+         background: white;
+      }
+      /* HEADER END */
+
+      /* MAIN START */
+      main{}
+      .content1 img{
+         width: 100%;
+      }
+      /* MAIN END */
+
+      /* FOOTER START */
+      .myfooter{
+         width: 100%;
+         height: 400px;
+         background: lightskyblue;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+
+      .myfooter .menu{}
+      .myfooter .menu li{
+         margin: 10px 0;
+         font-size: 1.5rem;
+         text-transform: uppercase;
+         text-align: center;
+      }
+      .myfooter .menu li a{}
+
+      .myfooter .hline{
+         height: 70%;
+         width: 6px;
+         background: white;
+         border-radius: 5px;
+      }
+
+      .myfooter .footermenu{
+         display: flex;
+      }
+      .myfooter .footermenu li{
+         margin: 0 10px;
+         font-size: 2rem;
+      }
+      .myfooter .footermenu li a{
+         color: #666;
+
+      }
+      /* FOOTER END */
+   </style>
+
+</head>
+<body>
+   
+   <header>
+      <nav class="mynav">
+         <ul class="menu">
+            <a href="#" class="link"><li>Anasayfa</li></a>
+            <a href="#" class="link"><li>Hakkımızda</li></a>
+            <a href="#" class="link"><li>İletişim</li></a>
+         </ul>
+         <ul class="loginmenu">
+            <a href="#" class="link"><li>Kayıt</li></a>
+            <div class="hline"></div>
+            <a href="#" class="link"><li>Giriş</li></a>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <div class="content1">
+         <img src="img/car4.webp" alt="">
+      </div>
+   </main>
+
+   <footer class="myfooter">
+      <ul class="menu">
+         <li><a href="#">Anasayfa</a></li>
+         <li><a href="#">Hakkımızda</a></li>
+         <li><a href="#">İletişim</a></li>
+         <li><a href="#">Kayıt</a></li>
+         <li><a href="#">Giriş</a></li>
+      </ul>
+
+      <div class="hline"></div>
+
+      <ul class="footermenu">
+         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+         <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+   </footer>
+   
+</body>
+</html>

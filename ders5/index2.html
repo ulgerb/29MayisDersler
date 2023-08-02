@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.css"><!-- externel -->
+   <style> /* internel */
+      h3{
+         color: chartreuse;
+      }
+      .green{
+         color: rgb(0, 199, 0);
+      }
+      .kirr{
+         color: red;
+      }
+      #bgcyan{
+         background: cyan;
+      }
+      #bgred{
+         background: red;
+      }
+      .div1{
+         /* margin border dışına boşluk vermek için kullanırız */
+         margin: 25px; 
+         /* padding content ile border'a kadar olan kısma boşluk verir */
+         padding: 25px;
+         background: blue;
+         color: white;
+      }
+      .div2{
+         margin-left: 25px;
+         margin-bottom: 25px;
+         padding: 40px 0px 20px 30px;
+         background: green;
+         color: bisque;
+      }
+      /* 
+      css özelliklerinde baskın(ezici) olan durumlar var
+      1) kodlar yukardan aşağı okunur son okunan geçerlidir(herzaman geçerlideğil)
+      2) baskın tanımlamalar örn: class id etiket; 
+      id en baskını sonrasında class donrasında etiket
+      */
+
+      .fs-20{
+         font-size: 20px;
+      }
+      .fi{
+         font-style: italic;
+      }
+      .card{
+         background: darkmagenta;
+         color: white;
+         padding: 20px;
+         margin: 0px 0px 0px 20px;
+         font-style: oblique;
+         font-weight: 800;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 12px;
+         width: 400px;
+         height: 300px;
+         letter-spacing: 1px;
+         line-height: 14px;
+         text-align: end;/*inline olanları*/
+      }
+      .box{
+         margin: 0 auto;
+         width: 40%;
+         height: 400px;
+         background: blue;
+      }
+      .box1{
+         width: 100px;
+         height: 80px;
+         background: red;
+         float: right;
+      }
+      .box2{
+         width: 100px;
+         height: 80px;
+         background: green; 
+         float: right;  
+      }
+      .box3{
+         width: 100px;
+         height: 80px;
+         background: coral; 
+         float: left;  
+      }
+   </style>
+</head>
+<body>
+
+   <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+   </div>
+   
+   <div class="div3" id="div3">externel CSSüçş</div>
+   <div class="card">
+      <i>Lorem, ipsum dolor.</i>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, culpa odit. Dolore nesciunt, rem, libero dolorem debitis, corporis id iste qui voluptatum nobis quidem. Beatae illum eligendi odit ullam enim in reprehenderit tenetur facilis nemo aperiam amet, quisquam quaerat unde omnis quas fugit explicabo asperiores itaque quibusdam quia repellendus corporis nobis rerum perferendis! Cumque aliquid ipsa sint, itaque quam nemo autem sed commodi voluptatem numquam maiores porro enim non, nisi est aut sit. Blanditiis optio soluta possimus? Maiores consectetur quod quidem molestiae exercitationem cupiditate ad, maxime dolores illum aperiam aspernatur esse. Quo accusantium, beatae vel ex eos laborum dolores deserunt.</p>
+   </div>
+
+
+
+
+   <div>
+      <p>asasd</p>
+   </div>
+   
+   <div class="fs-20">Lorem, ipsum dolor.</div>
+   <h1 class="fs-20 fi">1. başlık</h1>
+   <h2>2. başlık</h2>
+   <h3>3.başlık</h3>
+   
+   <div class="div1">Lorem, ipsum dolor.</div>
+   <div class="div2 div1">Lorem ipsum dolor sit amet.</div>
+   
+   <div style="color: red;">Lorem ipsum dolor sit amet.</div>
+   <div style="background: yellow;">Lorem ipsum dolor sit amet.</div>
+   <mark>Lorem ipsum dolor sit amet.</mark>
+   <h3>Lorem ipsum dolor sit amet.</h3>
+   <h3>Lorem, ipsum dolor.</h3>
+   <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+   <h4 class="green">Lorem ipsum dolor sit amet consectetur.</h4>
+   <h4 class="kirr">Lorem ipsum dolor sit amet consectetur.</h4>
+   <p class="green">Lorem, ipsum dolor.</p>
+   <div id="bgcyan">idler etiketlerde 1'den fazla kullanılmamalıdır.</div>
+   <div id="bgred">idler etiketin özel adıdır.</div>
+   <h3>asdasdasdasd</h3>
+</body>
+</html>

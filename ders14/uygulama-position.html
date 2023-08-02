@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Uygulama bar</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+      .main-header{
+         margin: auto;
+         height: 90vh;
+         width: 360px;
+         position: relative;
+      }
+      .tel{
+         margin: auto;
+         height: 90vh;
+         width: 360px;
+         position: relative;
+      }
+      .main-header nav{
+         width: 100%;
+         /*
+         display: flex;
+         justify-content: center;
+         */
+      }
+      .main-header ul{
+         list-style: none;
+         display: flex;
+         justify-content: space-between;
+         padding: 10px 10px;
+         position: absolute;
+         width: 334px;
+         bottom: 11vh;
+         background: #455d7a;
+         margin-bottom: 20px;
+         margin-left: 12px;
+      }
+      .main-header li{
+         width: 50px;
+         height: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background: #e3e3e3;
+         transition: all .4s;
+         box-shadow: rgba(198, 198, 198, 0.085) 0px -23px 25px 0px inset, rgba(158, 158, 158, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      .main-header li i{
+         color: #f95959;
+         font-size: 24px;
+      }
+      .main-header li:hover{
+         background: #f95959;
+         transform: translate(0px, -20px);
+         box-shadow: 0px -4px 0px 8px rgb(255, 255, 255), rgba(198, 198, 198, 0.085) 0px -23px 25px 0px inset, rgba(158, 158, 158, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      .main-header li:hover i{
+         color: #e3e3e3;
+      }
+      
+   </style>
+</head>
+<body>
+   <header class="main-header">
+      <img class="tel" src="https://svgsilh.com/svg/2245651.svg" alt="">
+      <nav>
+         <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-camera"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+         </ul>
+      </nav>
+   </header>
+   
+</body>
+</html>

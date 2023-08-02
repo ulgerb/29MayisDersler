@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>flex alıştırma</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      .container{}
+      .box1{
+         width: 500px;
+         height: 300px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: end;
+         align-items: end;
+      }
+      .box2{
+         margin: 10px;
+         width: 220px;
+         height: 150px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .box3{
+         width: 80px;
+         height: 50px;
+         border: 2px solid black;
+         background: #85d274;
+      }
+      
+      .box4{
+         width: 500px;
+         height: 300px;
+         border: 2px solid black;
+         background: coral;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+      }
+      .box5{
+         width: 100px;
+         height: 100px;
+         border: 2px solid black;
+         background: crimson;
+      }
+      .box6{
+         width: 500px;
+         height: 300px;
+         border: 2px solid black;
+         background: rgb(39, 141, 35);
+         display: flex;
+         align-items: end;
+         justify-content: space-around;
+      }
+      .box7{
+         margin-bottom: 10px;
+         width: 80px;
+         height: 80px;
+         border: 2px solid black;
+         background: rgb(109, 109, 213);
+      }
+      .box8{
+         padding: 10px;
+         width: 500px;
+         height: 300px;
+         border: 2px solid black;
+         background: rgb(74, 67, 48);
+         display: flex;
+         justify-content: space-between;
+      }
+      .bx1{
+         width: 500px;
+         height: 350px;
+         border: 2px solid black;
+         background: rgb(254, 210, 97);
+         margin-bottom: 50px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+      }
+      .bx2{
+         width: 450px;
+         height: 120px;
+         border: 2px solid black;
+         background: #5d91bf;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 10px;
+      }
+      .bx3{
+         width: 170px;
+         height: 140px;
+         border: 2px solid black;
+         background: #bf5d5d;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .bx4{
+         width: 90px;
+         height: 50px;
+         border: 2px solid black;
+         background: #935dbf;
+      }
+      .bxhid1{
+         display: flex;
+         justify-content: center;
+      }
+      .bxhid2{
+         margin-right: 20px;
+         display: flex;
+         justify-content: end;
+      }
+   </style>
+</head>
+<body>
+   <h1>Alıştırma Flex</h1>
+
+   <div class="container">
+
+      <div class="bx1">
+
+         <div class="bxhid1">
+            <div class="bx2">
+               <div class="box3"></div>
+               <div class="box3"></div>
+            </div>
+         </div>
+
+         <div class="bxhid2">
+            <div class="bx3">
+               <div class="bx4"></div>
+            </div>
+         </div>
+
+      </div>
+      
+      <div class="box8">
+         <div class="box7"></div>
+         <div class="box7"></div>
+      </div>
+      
+      <div class="box6">
+         <div class="box7"></div>
+         <div class="box7"></div>
+         <div class="box7"></div>
+      </div>
+      
+      <div class="box4">
+         <div class="box5"></div>
+         <div class="box5"></div>
+      </div>
+      
+      <div class="box1">
+         <div class="box2">
+            <div class="box3"></div>
+         </div>
+      </div>
+      
+   </div>
+   
+</body>
+</html>

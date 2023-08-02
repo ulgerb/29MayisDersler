@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>uygulama 2</title>
+   <style>
+      * {
+         box-sizing: border-box;
+         padding: 0;
+         margin: 0;
+      }
+
+      ul {
+         list-style-type: none;
+      }
+
+      a {
+         text-decoration: none;
+         color: #222;
+      }
+
+      .myfooter {
+         padding: 50px 30px;
+         width: 100%;
+         background: cornflowerblue;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .myfooter ul {
+         width: 33%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .myfooter .abone {
+         width: 33%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .myfooter .abone * {
+         width: 80%;
+      }
+
+      .myfooter .social {
+         width: 33%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0 50px;
+      }
+
+      @media screen and (max-width: 768px) {
+         .myfooter {
+            flex-direction: column; 
+            align-items: center; 
+         }
+
+         .myfooter ul {
+            margin: 20px 0; 
+            width: 300px; 
+            font-size: 24px; 
+         }
+         
+         .myfooter .abone {
+            margin: 20px 0; 
+            width: 300px; 
+         }
+         
+         .myfooter .abone * {
+            font-size: 20px; 
+         }
+         
+         .myfooter .social {
+            margin: 20px 0; 
+            width: 300px; 
+            font-size: 30px; 
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <h1>uygulama 2</h1>
+   <!-- order
+         uygulama 2
+         footer tasarlayın 
+         sol kısımda anasayfa vs linkler olucak
+         ortada input ve mail aboneliği kısmı
+         en sonda social iconlar
+   
+         bu yapıyı responsive hale getirin
+      -->
+
+   <footer class="myfooter">
+      <ul>
+         <li><a href="#">Anasayfa</a></li>
+         <li><a href="#">Ürünlerimiz</a></li>
+         <li><a href="#">Vizyonumuz</a></li>
+         <li><a href="#">Hakkında</a></li>
+         <li><a href="#">İletiim</a></li>
+      </ul>
+      <form class="abone" action="">
+         <input type="email" placeholder="example@gmail.com">
+         <button type="submit">Abone Ol</button>
+      </form>
+      <div class="social">
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-twitter"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+   </footer>
+</body>
+
+</html>

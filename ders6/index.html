@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- link'ler head içerisinde yazılır -->
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <title>GOOGLE FONT</title>
+   <style> /* import css'in içerisinde yazılır */
+      @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+      *{ /* tüm etiketler tanımlı olan özellikler */
+         font-family: 'Roboto', sans-serif;
+      }
+      .ubuntu{
+         font-family: 'Ubuntu', sans-serif;
+         font-weight: 500;
+      }
+      .kab{
+         font-family: 'Kablammo', cursive;
+         font-size: 1.25rem;
+      }
+      .card{
+         padding: 10px;
+         width: 200px;
+         height: 200px;
+         background: lightsalmon;
+      }
+      .m30{
+         margin: 30px;
+      }
+      .tt{
+         color: blue;
+         background: cornsilk;
+         text-transform: capitalize; /* tüm kelimelerin baş harflerini büyütür */
+         text-transform: lowercase; /* tüm karakterleri, harfleri küçük harfe dönüştürür */
+         text-transform: uppercase; /* tüm karakterleri, harfleri büyük harfe dönüştürür */
+      }
+      /* 1rem = 16px */
+
+      .box1{
+         width: 100px;
+         height: 100px;
+         background-color: burlywood;
+         border: 10px solid rgb(164, 0, 0);
+         border-bottom-color: aqua;
+         border-top-width: 20px;
+         border-bottom-right-radius: 50px;
+         border-bottom-left-radius: 50px;
+      }
+      .box2{
+         width: 200px;
+         height: 200px;
+         border-top: 5px dotted red;
+         border-left: 10px double orange;
+         border-bottom: 15px inset blue;
+         border-right: 20px solid black;
+         border-radius: 50%;
+      }
+   </style>
+</head>
+<body>
+   <h1>CSS Border</h1>
+   <div class="box2"></div>
+   <div class="box1"></div>
+   
+   
+   <h1>Google Font</h1>
+   <h4 class="kab">Başlık 1</h4>
+   <p class="ubuntu tt">Lorem ipsum dOlOr sit amet consectetur adipisicing elit. Deserunt, veniam?</p>
+   <p class="kab m30">Lorem ipsum dolor sit amet consectetur.</p>
+   <p style="font-style: italic;">Lorem ipsum dolor sit amet.</p>
+   <div class="card kab m30">
+      Lorem ipsum dolor sit.
+      <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+   </div>
+   <p class="ubuntu">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+   <h5 class="m30">Lorem ipsum dolor sit, amet consectetur adipisicing.</h5>
+   
+</body>
+</html>

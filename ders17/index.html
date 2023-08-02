@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DERS 17</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+
+      .container{
+         display: flex;
+         flex-direction: column;
+      }
+      .box{
+         width: 300px;
+         border: 4px solid black;
+         position: relative;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         transition: all 2s .5s ease;
+      }
+      .container button:hover + .box{ /* bir sonrakini seç */
+         transform: skew(50deg, 50deg);
+         transform: rotate(100deg);
+         transform: translate(300px, -50px);
+         transform: scale(0.5);
+         transform: translate(300px) rotateZ(0turn);
+      }
+      .ucgen{
+         width: 300px;
+         height: 300px;
+         background: darkred;
+         position: relative;
+         right: -150px;
+         top: 150px;
+         rotate: 45deg;
+      }
+      
+   </style>
+</head>
+<body>
+   
+   <div class="container">
+      <button style="margin: 20px 0; padding: 20px; background: dodgerblue;">Hareket ettir</button>
+      <div class="box">
+         <a href="#">
+            <div class="ucgen"></div>
+         </a>
+      </div>
+   </div>
+   
+</body>
+</html>

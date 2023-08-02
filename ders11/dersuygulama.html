@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>box uygulama</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+      .navbar{
+         padding: 10px 50px;
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 2px solid black;
+      }
+      .navbar .logo{
+         width: 220px;
+         height: 50px;
+         border: 2px solid black;
+      }
+      .navbar .menu{
+         width: 500px;
+         height: 50px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px 20px;
+      }
+      .navbar .link{
+         width: 120px;
+         height: 30px;
+         border: 2px solid black;
+      }
+      .navbar .navicon{
+         width: 180px;
+         height: 50px;
+         border: 2px solid black;
+      }
+      /* HEADER END */
+      /* MAIN CONTENT */
+      .container{
+         padding: 50px;
+      }
+      .container .box1{
+         padding: 10px;
+         width: 100%;
+         height: 500px;
+         border: 2px solid black;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      .container .bx1{
+         width: 350px;
+         height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+      }
+      .container .title{
+         height: 40px;
+         border: 2px solid black;
+      }
+      .container .title-icons{
+         height: 50px;
+         border: 2px solid black;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+      .container .icon{
+         width: 20%;
+         height: 30px;
+         border: 2px solid black;
+      }
+      .container .text{
+         height: 200px;
+         border: 2px solid black;
+      }
+      
+      .container .bx2{
+         width: 500px;
+         height: 450px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .container .bb1{
+         width: 450px;
+         height: 380px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: center;
+      }
+      .container .b1{
+         margin-top: 20px;
+         width: 400px;
+         height: 150px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+      }
+      .container .kutu1{
+         width: 120px;
+         height: 120px;
+         border: 2px solid black;
+         margin-right: 10px;
+      }
+      
+
+      .container .box2{
+         margin-top: 20px;
+         padding: 10px;
+         width: 100%;
+         height: 300px;
+         border: 2px solid black;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      .container .bx3{
+         padding-right: 10px;
+         width: 250px;
+         height: 250px;
+         border: 2px solid black;
+         display: flex;
+         align-items: center;
+         justify-content: end;
+      }
+      .container .bx4{
+         width: 450px;
+         height: 250px;
+         border: 2px solid black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .container .b2{
+         width: 120px;
+         height: 220px;
+         border: 2px solid black;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <nav class="navbar">
+         <div class="logo"></div>
+         <div class="menu">
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>
+         </div>
+         <div class="navicon"></div>
+      </nav>
+   </header>
+
+   <main>
+      <div class="container">
+         <div class="box1">
+            <div class="bx1">
+               <div class="title"></div>
+               <div class="title-icons">
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+               </div>
+               <div class="text"></div>
+            </div>
+
+            <div class="bx2">
+               <div class="bb1">
+                  <div class="b1">
+                     <div class="kutu1"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="box2">
+            <div class="bx3">
+               <div class="b2"></div>
+            </div>
+            <div class="bx4">
+               <div class="b2"></div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+</html>

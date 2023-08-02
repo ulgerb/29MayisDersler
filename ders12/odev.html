@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         box-sizing: border-box;
+         padding: 0;
+      }
+      html,body{
+         margin: 0;
+      }
+      .br4{
+         border: 4px solid black;
+      }
+      .container{
+         padding: 20px;
+      }
+      .box1{
+         width: 350px;
+         height: 220px;
+         background: orange;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding: 10px;
+         
+      }
+      .box2{
+         width: 350px;
+         height: 220px;
+         background: orange;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+      .box3{
+         margin-top: 20px;
+         width: 100%;
+         height: 140px;
+         background: orange;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+      .divh1{
+         display: flex;
+         justify-content: space-between;
+
+      }
+      .bx1, .bx2, .bx3{
+         width: 120px;
+         height: 80px;
+         background: peru;
+         display: flex;
+      }
+      .bx1{
+         padding: 6px 0;
+         justify-content: space-around;
+      }
+      .bx2{
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+      .bx3{
+         align-items: center;
+         justify-content: center;
+      }
+      .b1{
+         width: 50px;
+         height: 60px;
+         background: gray;
+      }
+      .b2{
+         width: 50px;
+         height: 30px;
+         background: gray;
+      }
+      .b3{
+         width: 100px;
+         height: 30px;
+         background: gray;
+      }
+      .bx4{
+         width: 120px;
+         height: 180px;
+         background: peru;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .divh3{
+         height: 180px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      .bx5{
+         width: 190px;
+         height: 60px;
+         background: peru;
+         display: flex;
+         padding: 2px;
+      }
+      .divh2{
+         display: flex;
+         justify-content: space-between;
+      }
+      .bx6{
+         width: 90px;
+         height: 40px;
+         background: peru;
+      }
+      .b4{
+         width: 100px;
+         height: 90px;
+         background: gray;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+      }
+      .kutu1{
+         width: 40px;
+         height: 70px;
+         background: chartreuse;
+      }
+      .divh4{
+         width: 70%;
+         display: flex;
+         justify-content: end;
+         align-items: end;
+      }
+      .b5{
+         width: 60px;
+         height: 20px;
+         background: gray;
+      }
+      .bx7,.bx8,.bx9,.bx10{
+         width: 120px;
+         height: 120px;
+         background: peru;
+         display: flex;
+         border: 4px solid black;
+      }
+      .bx7{
+         justify-content: center;
+         align-items: center;
+      }
+      .b6{
+         width: 45px;
+         height: 45px;
+         background: gray;
+         border: 4px solid black;
+      }
+      .bx8{
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+      .b7{
+         width: 100px;
+         height: 40px;
+         background: gray;
+         border: 4px solid black;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+      }
+      .kutu2{
+         margin-right: 5px;
+         width: 25px;
+         height: 25px;
+         background: chartreuse;
+         border: 4px solid black;
+      }
+      .bx9{
+         align-items: center;
+         justify-content: space-evenly;
+      }
+      .b8{
+         width: 50px;
+         height: 100px;
+         background: gray;
+         border: 4px solid black;
+      }
+      .divh5{
+         height: 100px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      .bx10{
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+      }
+   </style>
+</head>
+<body>
+   <h1>ÖDEV FLEX</h1>
+   <p>Lorem ipsum dolor sit amet.</p>
+   <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, quae.</div>
+   <header>
+      <nav></nav>
+   </header>
+
+   <main>
+      <div class="container">
+
+         <div style="display: flex;justify-content: space-between;">
+            <!-- KUTU 1 -->
+            <div class="box1 br4">
+               <div class="bx1 br4">
+                  <div class="b1 br4"></div>
+                  <div class="b2 br4"></div>
+               </div>
+               <div class="divh1">
+                  <div class="bx2 br4">
+                     <div class="b3 br4"></div>
+                     <div class="b3 br4"></div>
+                  </div>
+                  <div class="bx3 br4">
+                     <div class="b1 br4"></div>
+                  </div>
+               </div>
+            </div>
+            <!-- KUTU 2 -->
+            <div class="box2 br4">
+               <div class="bx4 br4">
+                  <div class="b4 br4">
+                     <div class="kutu1 br4"></div>
+                     <div class="kutu1 br4"></div>
+                  </div>
+               </div>
+               <div class="divh3">
+                  <div class="bx5 br4">
+                     <div class="divh4">
+                        <div class="b5 br4"></div>
+                     </div>
+                     <div class="b5 br4"></div>
+                  </div>
+                  <div class="bx5 br4"></div>
+                  <div class="divh2">
+                     <div class="bx6 br4"></div>
+                     <div class="bx6 br4"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- KUTU 3 -->
+         <div class="box3 br4">
+            <div class="bx7">
+               <div class="b6"></div>
+            </div>
+            <div class="bx8">
+               <div class="b7"></div>
+               <div class="b7">
+                  <div class="kutu2"></div>
+               </div>
+            </div>
+            <div class="bx9">
+               <div class="b8"></div>
+               <div class="divh5">
+                  <div class="b6"></div>
+                  <div class="b6"></div>
+               </div>
+            </div>
+            <div class="bx10">
+               <div class="b7"></div>
+               <div class="b6"></div>
+            </div>
+         </div>
+         
+      </div>
+   </main>
+
+   <footer></footer>
+
+   
+</body>
+</html>
